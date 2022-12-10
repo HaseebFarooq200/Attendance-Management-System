@@ -1,0 +1,62 @@
+.mycont{
+    margin-top: 100px;
+}
+.my-row{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 80%;
+    height: 100vh;
+}
+.upload{
+    width: 100px;
+    position: relative;
+  }
+  
+  .upload img{
+    width: 200px;
+    border-radius: 50%;
+    border: 6px solid #eaeaea;
+  }
+  
+  .upload .round{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #00B4FF;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .upload .round input[type = "file"]{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+  }
+  
+  input[type=file]::-webkit-file-upload-button{
+      cursor: pointer;
+  }
+  .myimg{
+    width: 100;
+    height: 100;
+  }
+  .fa{
+    color: #fff;
+  }
+
+  @media screen and (max-width: 650px) {
+    .my-row{
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      height: 100vh;
+  }
+  .mycol{
+    width: 100%;
+    height: 100vh;
+}
+  }
